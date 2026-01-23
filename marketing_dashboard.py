@@ -282,8 +282,12 @@ app.layout = html.Div([
                     ], style={'display': 'flex', 'alignItems': 'center', 'marginBottom': '10px', 'paddingBottom': '10px', 'borderBottom': '1px solid #f1f5f9', 'flexWrap': 'wrap'}),
                     
                     html.Div(
-                        dcc.Graph(id='main-chart', config={'displayModeBar': False, 'responsive': True}, style={'height': '100%', 'width': '100%'}),
-                        style={'minWidth': '0', 'flex': '1', 'overflow': 'hidden'}
+                        dcc.Graph(
+                            id='main-chart', 
+                            config={'displayModeBar': False, 'responsive': True}, 
+                            style={'height': '400px', 'width': '100%'}
+                        ),
+                        style={'minWidth': '0', 'flex': '1', 'overflow': 'hidden', 'height': '400px'}
                     )
                 ], style={'background': 'white', 'padding': '20px', 'borderRadius': '12px', 'boxShadow': '0 2px 4px rgba(0,0,0,0.04)', 'border': '1px solid #e2e8f0'})
             ], className='left-column'),
@@ -390,7 +394,7 @@ def update_metrics(start_date, end_date):
             data=stats.to_dict('records'), columns=cols,
             sort_action='native',
             sort_mode='single',
-            cell_selectable=False, # Disable selection highlighting
+            cell_selectable=False,
             style_table={'overflowX': 'auto', 'width': '100%'},
             style_cell={'textAlign': 'left', 'padding': '5px 10px', 'fontSize': '12px', 'fontFamily': 'inherit', 'minWidth': '80px', 'maxWidth': '180px', 'whiteSpace': 'normal', 'borderBottom': '1px solid #f1f5f9'},
             style_header={'backgroundColor': 'white', 'fontWeight': 'bold', 'color': '#1e293b', 'borderBottom': '2px solid #e2e8f0', 'fontSize': '12px'},
@@ -490,6 +494,13 @@ app.index_string = '''
             
             .DateRangePickerInput_clearDates { display: none; }
         </style>
+        <script>
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    window.dispatchEvent(new Event('resize'));
+                }, 150);
+            });
+        </script>
     </head>
     <body>
         {%app_entry%}
