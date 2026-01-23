@@ -35,8 +35,8 @@ Built with **Python Dash & Plotly** (no drag-and-drop tools), featuring:
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/yourusername/marketing-dashboard-generator.git](https://github.com/yourusername/marketing-dashboard-generator.git)
-   cd marketing-dashboard-gener™£ator
+   git clone https://github.com/ArsVie/Algorithmic-Marketing-Dashboard-Generator
+   cd Algorithmic-Marketing-Dashboard-Generator
    ```
 2. **Create a virtual environment (Recommended)**
 ```bash
