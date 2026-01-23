@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 
 # --- INITIALIZE APP ---
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 app.title = "Marketing Insights Dashboard"
 
 # --- DATA LOADER ---
@@ -511,3 +512,4 @@ app.index_string = '''
 
 if __name__ == '__main__':
     app.run(debug=True, port=8050)
+    
