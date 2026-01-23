@@ -3,7 +3,6 @@
 A full-stack data visualization project that simulates realistic, high-volatility marketing data using **Stochastic Jump Diffusion models** and visualizes it via a custom-built **Dash/Plotly** web application.
 
 ![Dashboard Screenshot](Captura_DashBoard.png)
-*(Replace this with your actual screenshot)*
 
 ## The "Why"
 Standard "dummy data" (random integers) fails to capture the nuances of real-world marketing performance—seasonality, budget shocks, and channel correlation. 
