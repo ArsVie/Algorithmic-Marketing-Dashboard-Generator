@@ -13,7 +13,7 @@ app.title = "Marketing Insights Dashboard"
 # --- DATA LOADER ---
 def load_data():
     try:
-        df = pd.read_csv("marketing_data_shocks.csv")
+        df = pd.read_csv("dummy_data.csv")
         df['Date'] = pd.to_datetime(df['Date'])
         return df
     except:
