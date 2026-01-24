@@ -32,7 +32,7 @@ Built with **Python Dash & Plotly** (no drag-and-drop tools), featuring:
 * **Styling:** Custom CSS, Flexbox, Grid Layouts
 
 ## Installation & Usage
-
+You can access the live version at https://algorithmic-marketing-dashboard-generator.onrender.com/ or use it locally. To run it locally:
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ArsVie/Algorithmic-Marketing-Dashboard-Generator
